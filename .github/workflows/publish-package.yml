@@ -29,4 +29,5 @@ jobs:
     
     - name: Publish the Package
       run: |
-        twine upload --skip-existing dist/*
+        echo ${{ TWINE_USERNAME }}
+        twine upload --repository-url https://upload.pypi.org/legacy/ --username paulkadabo --password Paul@40781998 --skip-existing dist/*
