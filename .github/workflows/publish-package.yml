@@ -30,4 +30,4 @@ jobs:
     
     - name: Publish the Package
       run: |
-        twine upload --repository-url https://upload.pypi.org/legacy/ --username ${{ env.TWINE_USERNAME }} --password {{ env.TWINE_PASSWORD }} --skip-existing dist/*
+        twine upload --repository-url https://upload.pypi.org/legacy/ --username ${{ env.TWINE_USERNAME }} --password ${{ env.TWINE_PASSWORD }} --skip-existing dist/*
