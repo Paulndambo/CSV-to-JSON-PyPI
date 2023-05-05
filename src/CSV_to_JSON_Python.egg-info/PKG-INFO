@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: CSV-to-JSON-Python
-Version: 0.0.3
+Version: 260
 Summary: This is a package used to convert csv data to a json object
 Home-page: https://testpypi.org/project/CSV to JSON Python/
 Author: Paul Ndambo

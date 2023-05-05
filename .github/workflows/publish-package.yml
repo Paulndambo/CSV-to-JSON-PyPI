@@ -27,10 +27,7 @@ jobs:
         pip install -r requirements.txt
         python -m build
     
-    - name: Print Values
-      run: |
-        echo "$GITHUB.REPOSITORY"
     
     - name: Publish the Package
       run: |
-        twine upload --repository-url https://upload.pypi.org/legacy/ --username paulkadabo --password Paul@40781998 --skip-existing dist/*
+        twine upload --repository-url https://upload.pypi.org/legacy/ --username ${{ env.TWINE_USERNAME }} --password {{ env.TWINE_PASSWORD }} --skip-existing dist/*
