@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "CSV to JSON Python",
-    version = "0.0.1",
+    version = "0.0.4",
     author = "Paul Ndambo",
     author_email = "paulkadabo@gmail.com",
     description = "This is a package used to convert csv data to a json object",
