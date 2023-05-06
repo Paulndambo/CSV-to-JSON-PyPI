@@ -36,6 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: bitnami/kubectl:latest
       - name: Deploy to Kubernetes
         uses: bitnami/kubectl:latest
 
